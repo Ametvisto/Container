@@ -1,0 +1,91 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 6 version
+*/
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto; 
+    background: pink;
+    height: 500px;
+    }
+    
+    .flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .box {
+        width: 150px;
+        background-color: brown;
+        margin: 10px;
+    }
+    .logo {
+        display: block;
+        height: 100px;
+    }
+    .logo img {
+        height: 100%; 
+    }
+    .nav a {
+        color: black    ;
+        font-size: 40px;
+    }
+    
+    .burger {
+        display: none;
+        color: #fff;
+        font-size: 40px;
+    }
+    
+    
+    /* responsive styles */
+    
+    @media (max-width: 1024px) {
+        .container {
+            background: green;
+        }
+        .box {
+            background-color : black;
+        }
+        .box {
+            width: 50%;
+        }
+    }
+    @media (max-width: 768px) {
+        .container {
+            background: red;
+        }
+        nav {
+            display: none;
+        } 
+        .burger {
+            display: block;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .container {
+            background: blue;
+        }
+        .box {
+            width: 100%;
+        }
+        .flex {
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+        }
+    }
+    
